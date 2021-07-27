@@ -19,7 +19,6 @@ verify using `docker ps`
 Make sure you have OpenJDK 11 installed in /usr/lib/jvm/java-11
 If it's elsewhere, fix paths in *.sh scripts !!!
 
-e.g.
 ```
 sudo dnf -y install java-11-openjdk-devel
 ```
@@ -27,7 +26,6 @@ sudo dnf -y install java-11-openjdk-devel
 Get Spark 3.1:
 https://spark.apache.org/downloads.html
 
-e.g.
 ```
 wget https://apache.miloslavbrada.cz/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
 ```
@@ -107,7 +105,9 @@ Ideally close to the end before "SparkUI: Stopped Spark web UI" you will see:
 `Accumulator: "Changed Row Count" is set to: 4`
 
 And that means the first run was sucessfull and updated the rows without info.
+
 If you go for second round, job will be smarter to not update stuff without null values for "lettersinname" column:
+
 Accumulator: "Changed Row Count" is set to: 0
 
 And that's it :-) 
