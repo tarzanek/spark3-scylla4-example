@@ -125,3 +125,8 @@ to show current rows:
 ./scylla-tools-java/bin/cqlsh $HOSTNAME 9044 -e "select * from myOwnKeyspace.sparseTable"
 ```
 
+If you want to run the commands from the app interactively, use Spark REPL:
+```
+./spark3-shell.sh
+```
+
